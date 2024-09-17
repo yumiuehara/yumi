@@ -13,7 +13,7 @@ const config: Config = {
         foreground: 'var(--foreground)',
       },
       backgroundImage: {
-        'landing-page': "url('/images/bg.webp')"
+        'landing-page': "url('/yumi/images/bg.webp')"
       }
     },
   },
