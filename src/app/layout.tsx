@@ -23,8 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.className}`}>
-        <AOS />
-        {children}
+        <div className="w-[100vw] max-w-full min-h-screen flex flex-col">
+          <AOS />
+          {children}
+        </div>
       </body>
     </html>
   )
