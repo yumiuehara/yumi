@@ -12,6 +12,9 @@ const config: Config = {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
       },
+      backgroundImage: {
+        'landing-page': "url('/images/bg.webp')"
+      }
     },
   },
   plugins: [],
