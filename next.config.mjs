@@ -6,7 +6,8 @@ const nextConfig = {
     basePath: isProduction ? '/yumi' : '',
     output: "export",
     images: {
-        unoptimized: true
+        unoptimized: true,
+        path: "/",
     }
 }
 
