@@ -6,7 +6,7 @@ import Hero from '@/sections/Hero'
 
 export default function DefaultPage() {
   return (
-    <div className="w-full bg-sayagata bg-repeat flex flex-col text-lg relative">
+    <div className="w-full bg-sayagata bg-repeat bg-fixed flex flex-col text-lg relative">
       <Hero />
 
       <About />
