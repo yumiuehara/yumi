@@ -5,7 +5,7 @@ import { IoLogoGithub } from 'react-icons/io'
 
 export default function Projects() {
   return (
-    <section id="projects" className="flex flex-col px-10 py-20">
+    <section id="projects" className="flex flex-col px-10 py-20 text-black">
       <h2 className="text-2xl font-bold text-center mb-10">Projetos</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10">

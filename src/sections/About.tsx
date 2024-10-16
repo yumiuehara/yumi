@@ -10,7 +10,10 @@ import { JSXElement } from 'react-photo-album'
 
 export default function About() {
   return (
-    <section id="about" className="flex flex-col justify-center p-10 py-20">
+    <section
+      id="about"
+      className="flex flex-col justify-center p-10 py-20 text-black"
+    >
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 justify-center">
         <Skills />
         <Bio />
