@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
+import { Noto_Sans } from 'next/font/google'
 import './globals.css'
 import AOS from '@/components/AOS'
+import classNames from 'classnames'
 
-const roboto = Roboto({
+const roboto = Noto_Sans({
   weight: ['400', '700', '900'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
@@ -12,21 +13,24 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: 'yumi',
-  description: "yumi's portfolio",
+  description: 'meu portifólio',
 }
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`${roboto.className}`}>
-        <div className="w-[100vw] max-w-full min-h-screen flex flex-col">
-          <AOS />
-          {children}
-        </div>
+    <html>
+      <body
+        className={classNames(
+          roboto.className,
+          'w-[100vw] max-w-full min-h-screen flex flex-col'
+        )}
+      >
+        <AOS />
+        {children}
       </body>
     </html>
   )

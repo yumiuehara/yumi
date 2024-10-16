@@ -1,9 +1,21 @@
-export default function Home() {
+import Footer from '@/sections/Footer'
+import Hobbies from '@/sections/Hobbies'
+import Projects from '@/sections/Projects'
+import About from '@/sections/About'
+import Hero from '@/sections/Hero'
+
+export default function DefaultPage() {
   return (
-    <div className="w-full h-[100vh] flex justify-center items-end bg-landing-page bg-center bg-no-repeat bg-cover">
-      <span className="break-all text-center font-bold md:text-[8rem] text-[2rem] text-white [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)] py-5">
-        yumi.dev.br
-      </span>
+    <div className="w-full bg-sayagata bg-repeat flex flex-col text-lg relative">
+      <Hero />
+
+      <About />
+
+      <Projects />
+
+      <Hobbies />
+
+      <Footer />
     </div>
   )
 }
