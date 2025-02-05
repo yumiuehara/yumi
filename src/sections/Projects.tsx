@@ -10,12 +10,20 @@ export default function Projects() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10">
         <ProjectItem
-          tag="new"
           title="Meu portifólio"
           description="Site com informações sobre mim."
           image="/images/projects/my-website.png"
           url="https://yumi.dev.br/"
           githubUrl="https://github.com/yumiuehara/yumi"
+        />
+
+        <ProjectItem
+          tag="new"
+          title="Receitas"
+          description="Site para guardar receitas"
+          image="/images/projects/receitas.webp"
+          url="https://chef.yumi.dev.br/"
+          githubUrl="https://github.com/yumiuehara/cachurros-chef"
         />
 
         <ProjectItem
@@ -29,13 +37,6 @@ export default function Projects() {
           tag="soon"
           title="Tracker"
           description="Site para logar coisas que eu consumi."
-          image="/images/projects/soon.webp"
-        />
-
-        <ProjectItem
-          tag="soon"
-          title="Receitas"
-          description="Site para guardar receitas"
           image="/images/projects/soon.webp"
         />
       </div>
