@@ -11,7 +11,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10">
         <ProjectItem
           title="Meu portifólio"
-          description="Site com informações sobre mim."
+          description="Site com informações sobre mim, desenvolvido utilizando Next.js e TailwindCSS."
           image="/images/projects/my-website.png"
           url="https://yumi.dev.br/"
           githubUrl="https://github.com/yumiuehara/yumi"
@@ -20,7 +20,7 @@ export default function Projects() {
         <ProjectItem
           tag="new"
           title="Receitas"
-          description="Site para guardar receitas"
+          description="Site para guardar receitas, desenvolvido utilizando Angular e Analog."
           image="/images/projects/receitas.webp"
           url="https://chef.yumi.dev.br/"
           githubUrl="https://github.com/yumiuehara/cachurros-chef"
