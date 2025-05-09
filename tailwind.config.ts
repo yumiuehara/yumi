@@ -15,6 +15,7 @@ const config: Config = {
       backgroundImage: {
         'landing-page': "url('/images/bg.webp')",
         'sayagata': "url('/images/sayagata.png')",
+        'webb': "url('/images/webb.png')"
       },
     },
   },

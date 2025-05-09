@@ -35,7 +35,7 @@ export default function Projects() {
 
         <ProjectItem
           tag="soon"
-          title="Tracker"
+          title="Loguinho"
           description="Site para logar coisas que eu consumi."
           image="/images/projects/soon.webp"
         />

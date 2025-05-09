@@ -14,9 +14,11 @@ export default function About() {
       id="about"
       className="flex flex-col justify-center p-10 py-20 text-black"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 justify-center">
-        <Skills />
-        <Bio />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center">
+        <div className="flex flex-col gap-y-10">
+          <Bio />
+          <Skills />
+        </div>
         <Experience />
       </div>
     </section>
@@ -42,7 +44,7 @@ function Skills() {
     <div className="flex flex-col items-center gap-y-4 px-10">
       <p className="font-bold text-xl">Competências</p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full px-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full px-2">
         <SkillTag text="Vue" icon={<IoLogoVue />} />
         <SkillTag text="React" icon={<IoLogoReact />} />
         <SkillTag text="Svelte" icon={<RiSvelteFill />} />
@@ -74,13 +76,14 @@ function Bio() {
         height={0}
         className="w-[250px] h-auto"
       />
-      <div className="font-bold">Yumi | 26 | Brazil</div>
+      <div className="font-bold">Yumi | São Paulo, Brasil</div>
 
       <div className="text-center">
-        Formada em Ciência da Computação, possuo 4 anos de experiência no
-        desenvolvimento e manutenção de aplicações web. Minha experiência
-        abrange também o consumo e desenvolvimento de APIs e bancos de dados.
-        Atualmente, busco novas experiências e oportunidades de aprendizado.
+        Desenvolvedora com 4 anos de experiência, especializada em front-end.
+        Trabalhei em diversos projetos, com designs modernos e responsivos.
+        Atualmente busco oportunidade de continuar crescendo profissionalmente,
+        aprendendo tecnologias novas e aplicando minhas habilidades em projetos
+        desafiadores.
       </div>
     </div>
   )
@@ -112,37 +115,121 @@ function Experience() {
 
           <div>
             <div>
-              <span>2022-2024 - </span>
-              <strong>Analista de sistemas júnior</strong>
+              <span>2020-2024 - </span>
+              <strong>Engenheira de Software</strong>
             </div>
-            <ul className="list-disc list-inside px-2 break-words">
+            <ul className="list-disc list-inside pt-2 px-2 break-words">
               <li>
-                Desenvolvimento de sistemas web utilizando
-                Vue/Svelte/React/Next.js/Javascript/Typescript
-              </li>
-              <li> Desenvolvimento de APIs utilizando Kotlin/Java</li>
-              <li>Manipulação de banco de dados utilizando MySQL</li>
-              <li>
-                Integração de smart contracts da NEO blockchain com front-end
-                utilizando Typescript
+                Desenvolvimento e manutenção de aplicações utilizando Vue,
+                Svelte, React, NextJS, AngularJS, Javascript, Typescript,
+                TailwindCSS, ChakraUI, GraphQL, Java, Kotlin, MySQL
               </li>
             </ul>
-          </div>
 
-          <div>
-            <div>
-              <span>2020-2022</span> -{' '}
-              <strong>Estagiária de desenvolvimento web</strong>
+            <div className="pl-2 pt-2">
+              <span>Alguns projetos:</span>
+
+              <div className="pt-2">
+                <span className="font-bold">iTrack Brasil</span>
+                <ul className="list-disc list-inside pt-2 px-2 break-words">
+                  <li>
+                    Plataforma de operações logísticas com rastreamento em tempo
+                    real
+                  </li>
+                  <li>
+                    Desenvolvimento de funcionalidades front-end com Vue e Vuex,
+                    incluindo módulos de relatórios, processamento de dados
+                    (CSV/XLSX) e gestão de imagens
+                  </li>
+                  <li>
+                    Implementação e manutenção de APIs REST em Java e Kotlin,
+                    realizando adaptações no banco de dados para novas
+                    funcionalidades e criei testes unitários
+                  </li>
+                </ul>
+              </div>
+
+              <div className="pt-2">
+                <span className="font-bold">Abacashi</span>
+                <ul className="list-disc list-inside pt-2 px-2 break-words">
+                  <li>Plataforma de crowdfunding</li>
+                  <li>
+                    Desenvolvimento front-end utilizando React, GraphQL e
+                    AngularJS
+                  </li>
+                  <li>Manutenção do back-end utilizando C# e Typescript</li>
+                </ul>
+              </div>
+
+              <div className="pt-2">
+                <span className="font-bold">WOW Talents</span>
+                <ul className="list-disc list-inside pt-2 px-2 break-words">
+                  <li>
+                    Plataforma de casting para pessoas da área do entretenimento
+                  </li>
+                  <li>
+                    Implementação de novas features utilizando Vue e manutenção
+                    do back-end utilizando Kotlin, como disparos de e-mails e
+                    mensagens no WhatsApp, e do banco de dados
+                  </li>
+                </ul>
+              </div>
+
+              <div className="pt-2">
+                <span className="font-bold">nDapp</span>
+                <ul className="list-disc list-inside pt-2 px-2 break-words">
+                  <li>
+                    Plataforma agregadora de informações da blockchain NEO,
+                    participei desde a fase inicial como desenvolvedora
+                    front-end
+                  </li>
+                  <li>Implementei disparo de e-mails e templates</li>
+                </ul>
+              </div>
+
+              <div className="pt-2">
+                <span className="font-bold">COZ</span>
+                <ul className="list-disc list-inside pt-2 px-2 break-words">
+                  <li>
+                    Participei do desenvolvimento das carteiras blockchain Neon
+                    Wallet Mobile, utilizando React Native, e da Neon Wallet
+                    Desktop, utilizando React, Typescript, Redux e Electron
+                  </li>
+                </ul>
+              </div>
+
+              <div className="pt-2">
+                <span className="font-bold">Apptite</span>
+                <ul className="list-disc list-inside pt-2 px-2 break-words">
+                  <li>Plataforma de delivery de comida</li>
+                  <li>
+                    Trabalhei com o desenvolvimento do front-end utilizando Vue,
+                    com implementações de novas funcionalidades, como vitrine e
+                    cardápios
+                  </li>
+                </ul>
+              </div>
+
+              <div className="pt-2">
+                <span className="font-bold">Linkd</span>
+                <ul className="list-disc list-inside pt-2 px-2 break-words">
+                  <li>Plataforma acadêmica sobre blockchain</li>
+                  <li>
+                    Responsável pelo desenvolvimento front-end utilizando
+                    Svelte, SvelteKit e Vite desde a fase inicial do projeto
+                  </li>
+                  <li>
+                    Implementação de um sistema de blog com Markdown e plugins
+                    personalizados para formatação avançada (code snippets
+                    multilíngue e glossário técnico)
+                  </li>
+                  <li>
+                    Otimização de SEO e integração de smart contracts para
+                    operações na blockchain NEO
+                  </li>
+                </ul>
+              </div>
             </div>
-
-            <ul className="list-disc list-inside px-2">
-              <li>
-                Desenvolvimento de sistemas web utilizando
-                Vue/Javascript/Typescript
-              </li>
-              <li>Desenvolvimento de APIs utilizando Kotlin/Java</li>
-              <li>Desenvolvimento Android utilizando Kotlin</li>
-            </ul>
           </div>
         </div>
       </div>
