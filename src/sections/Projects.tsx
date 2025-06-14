@@ -18,7 +18,6 @@ export default function Projects() {
         />
 
         <ProjectItem
-          tag="new"
           title="Receitas"
           description="Site para guardar receitas, desenvolvido utilizando Angular e Analog."
           image="/images/projects/receitas.webp"
@@ -27,16 +26,18 @@ export default function Projects() {
         />
 
         <ProjectItem
-          tag="soon"
-          title="FC Website"
-          description="Site para minha Free Company do MMORPG Final Fantasy XIV."
-          image="/images/projects/soon.webp"
+          tag="new"
+          title="Codex"
+          description="Site para anotar coisas que eu assisti ou li, desenvolvido utilizando Next.js, TailwindCSS e Typescript."
+          image="/images/projects/codex.webp"
+          url="https://codex.yumi.dev.br/"
+          githubUrl="https://github.com/yumiuehara/codex"
         />
 
         <ProjectItem
           tag="soon"
-          title="Loguinho"
-          description="Site para logar coisas que eu consumi."
+          title="FC Website"
+          description="Site para minha Free Company do MMORPG Final Fantasy XIV."
           image="/images/projects/soon.webp"
         />
       </div>
